@@ -58,25 +58,7 @@ public class RocketLauncher : MonoBehaviour
             Shot();
         }
 
-		/*if (Input.GetButtonDown("Reload") & rpgmode < 4 & inventoryAmmo > 0 & curAmmo != maxAmmo)// if reload
-        {
-            GetComponent<AudioSource>().PlayOneShot(Reloaded);// play audio
-            rpgmode = 4;//animation mode
-            GetComponent<Animation>().CrossFade(_reload_);// reload animation
-        }
-        if (rpgmode == 4)
-        {
-            rpgreload1 += Time.deltaTime;
-
-        }
-        if (rpgreload1 > GetComponent<Animation>()[_reload_].length)
-        {
-            rpgreload1 = 0;
-            rpgmode = 0;// animation mode
-            Transform go = Instantiate(rocket, RocketRespawn.position, RocketRespawn.rotation) as Transform;
-			go.parent = _RocketLauncher;// create rocket
-            Reload();
-        }*/
+		
 
     }
     public void Reload_()

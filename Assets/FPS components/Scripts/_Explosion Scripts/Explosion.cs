@@ -24,7 +24,9 @@ public class Explosion : MonoBehaviour
             }
 			 if(hitColliders[i].GetComponent<Health>())// if hit fpc
             {
-			 hitColliders[i].GetComponent<Health>().Del(); // player health - explosion damage 	
+			 hitColliders[i].GetComponent<Health>().Del();
+                Vector3 tossDir = hitColliders[i].transform.position - transform.position;
+                hitColliders[i].GetComponent<CharacterController>().Move(tossDir * Force / 1000);
             }
 			
         }
