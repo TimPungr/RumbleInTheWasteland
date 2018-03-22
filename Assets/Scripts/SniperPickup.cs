@@ -1,11 +1,12 @@
-﻿using System.Collections;
+﻿using System;
+using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
 public class SniperPickup : MonoBehaviour {
 
     public int increase = 3;
-
+    
     // Use this for initialization
     void Start()
     {
